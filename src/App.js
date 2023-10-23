@@ -5,6 +5,7 @@ import RootLayout from './Layouts/RootLayout';
 import HelpLayout from './Layouts/HelpLayout';
 import Faq from './pages/faq';
 import Contact from './pages/contact';
+import Error from './pages/error';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -16,7 +17,7 @@ const router=createBrowserRouter(
           <Route path='Contact' element={<Contact/>}/>
 
         </Route>
-
+<Route path='*' element={<Error/>}/>
       </Route>
   )
 )
